@@ -1,14 +1,15 @@
 {
-        "builds": [
-          {
-            "src": "build.sh",
-            "use": "@vercel/static-build"
-          },
-          {
-            "src": "manage.py",
-            "use": "@vercel/python"
-          }
-        ],
+    "buildCommand": "./build.sh && pip install -r requirements.txt"
+        // "builds": [
+        //     {
+        //         "src": "build.sh",
+        //         "use": "@vercel/static-build"
+        //     },
+        //     {
+        //         "src": "manage.py",
+        //         "use": "@vercel/python"
+        //     }
+        //     ],
       
     
     // "builds": [{
